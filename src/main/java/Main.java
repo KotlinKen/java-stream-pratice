@@ -9,6 +9,7 @@ public class Main {
 
         //soutc -> system.out::println
         stringList.stream().filter("corn super"::contains).forEach(System.out::println);
+        stringList.stream().filter(fruit -> "corn super".contains(fruit)).forEach(System.out::println);
 
         stringList.stream().filter(fruit -> fruit.contains("ba")).forEach(System.out::println);
 
