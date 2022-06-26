@@ -36,6 +36,12 @@ public class Retrieve {
         hashTable.containsValue("test");
 
 
+        hashTable.elements();
+        hashTable.isEmpty();
+
+        hashTable.remove(441);
+
+
         hashTable.entrySet().stream().forEach(System.out::println);
 
     }
