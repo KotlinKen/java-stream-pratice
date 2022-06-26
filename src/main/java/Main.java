@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Double colon
@@ -30,6 +31,12 @@ public class Main {
 
         dogList.stream().map(Town::new).forEach(System.out::println);
 
+
+        String[] array = new String[]{"a", "b", "c"};
+
+
+        Stream<String> stream = Arrays.stream(array, 1, 3);
+        stream.forEach(System.out::println);
 
 
 
