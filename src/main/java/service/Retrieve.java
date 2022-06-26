@@ -16,5 +16,12 @@ public class Retrieve {
 
         hashTable.entrySet().stream().forEach(System.out::println);
 
+
+        hashTable.clear();
+        hashTable.clone();
+        hashTable.compute(441, (k, v)-> v + "it's computed");
+
+        System.out.println(hashTable.get(441));
+        hashTable.entrySet().stream().forEach(System.out::println);
     }
 }
